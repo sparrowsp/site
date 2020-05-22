@@ -1,0 +1,14 @@
+
+
+{% extends "art/base.html" %}
+{% load static%}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+    <h1>{{ image.title }}</h1>
+    <p class="date">
+        Published {{ image.publish }} by {{ image.author }}
+    </p>
+
+
+{% endblock %}
