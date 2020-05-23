@@ -1,51 +1,17 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-vjBZc/DqIqR687k5rf6bUQ6IVSOxQUi9TcwtvULstA7+YGi//g3oT2qkh8W1Drx9" crossorigin="anonymous"
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Valery Tkachenko, Irina Angelova & Ilya Kukuchkin">
-    <meta name="generator" content="Jekyll v4.0.1">
-
-
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <script type="text/javascript" src="{% static 'js/sketch.js' %}"> </script>
-    <script type="text/javascript" src="{% static 'js/sketch2.js' %}"> </script>
-
-
-
 <header>
 
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
+    <div class="navbar navbar-dark bg-dark shadow-sm">
         <h1 align="center" class="text-white"> Art Blog </h1>
+        <h2 align="center" class="text-white"><a href="/flower">Flowers</a> </h2>
+        <h2 align="center" class="text-white"><a href="/art">Blocks</a> </h2>
+        <h2 align="center" class="text-white"><a href="/arti">Strange</a> </h2>
     </div>
-  </div>
 </header>
 
 
@@ -56,10 +22,12 @@
     {% block content %}
     {% endblock %}
 </div>
+
 <div id="sidebar">
     <h2>Art blog</h2>
-    <p>This is art blog</p>
+    <p>By Irina Angelova, Ilya Kukushkin & Valery Tkachenko</p>
 </div>
+
 </body>
 </html>
 
