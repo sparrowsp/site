@@ -39,13 +39,15 @@ def post_detail(request, year, month, day, post):
                   'similar_posts': similar_posts})
 
 class PostListView(ListView):
+
     queryset = Post.objects.all()
     context_object_name = 'posts'
     paginate_by = 3
     template_name = 'news/post/list.html'
 
 def post_list(request, tag_slug=None):
-    object_list = Post.objects.all()
+
+    object_list = Post.objects.filter(status = 2)
     tag = None
 
     if tag_slug:
@@ -62,6 +64,8 @@ def post_list(request, tag_slug=None):
     except EmptyPage:
         # If page is out of range deliver last page of results
         posts = paginator.page(paginator.num_pages)
+
+
     return render(request, 'news/post/list.html', {'page': page,
                                                    'posts': posts,
                                                    'tag': tag})
