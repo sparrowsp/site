@@ -8,7 +8,7 @@ from django.db.models import Count
 
 def post_detail(request, year, month, day, post):
     post = get_object_or_404(Post, slug=post,
-                                   status='published',
+                                   status='2',
                                    publish__year=year,
                                    publish__month=month,
                                    publish__day=day)
