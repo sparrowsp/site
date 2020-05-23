@@ -25,6 +25,7 @@ def post_detail(request, year, month, day, post):
             new_comment.post = post
             # Save the comment to the database
             new_comment.save()
+            comment_form = CommentForm()
     else:
         comment_form = CommentForm()
     post_tags_ids = post.tags.values_list('id', flat=True)
